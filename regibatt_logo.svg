@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000">
+  <title>RegiBatt Faceted Diamond Logo</title>
+  <desc>Four-facet diamond using only #22C55E, #15803D and #14532D.</desc>
+  <g shape-rendering="geometricPrecision">
+    <polygon points="500,80 500,500 80,500" fill="#22C55E"/>
+    <polygon points="500,80 920,500 500,500" fill="#15803D"/>
+    <polygon points="80,500 500,500 500,920" fill="#15803D"/>
+    <polygon points="500,500 920,500 500,920" fill="#14532D"/>
+  </g>
+</svg>

@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="ru" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0F172A" />
+    <meta name="description" content="RegiBatt помогает импортёрам и производителям батарей собирать документы, структурировать данные, находить пробелы и готовить CSV/JSON для дальнейшей работы с цифровым паспортом батареи." />
+    <title>RegiBatt — подготовка данных для цифровых паспортов батарей</title>
+    <link rel="icon" href="regibatt_logo.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@700&family=Montserrat:wght@800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content" data-i18n="skipLink">Перейти к содержанию</a>
+
+    <header class="topbar">
+      <a class="logo" href="#main-content" aria-label="RegiBatt — главная" data-i18n-aria-label="homeLabel">
+        <img src="regibatt_logo.svg" alt="" width="31" height="31" />
+        <span class="logo__name"><span class="logo__regi">Regi</span><span class="logo__batt">Batt</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Основная навигация" data-i18n-aria-label="mainNavigationLabel">
+        <a href="#solution" data-i18n="navSolution">Решение</a>
+        <a href="#workflow" data-i18n="navWorkflow">Как это работает</a>
+        <a href="#benefits" data-i18n="navBenefits">Выгода</a>
+        <a href="#faq" data-i18n="navFaq">Вопросы</a>
+      </nav>
+      <div class="topbar__actions">
+        <div class="language-switch" role="group" aria-label="Выбор языка" data-i18n-aria-label="languageLabel">
+          <button class="language-switch__button is-active" type="button" data-language="ru" aria-pressed="true">RU</button>
+          <button class="language-switch__button" type="button" data-language="en" aria-pressed="false">EN</button>
+        </div>
+        <button class="theme-toggle" type="button" aria-label="Включить светлую тему" aria-pressed="true">
+          <span class="theme-toggle__icon" aria-hidden="true">☀</span>
+          <span class="theme-toggle__text">Светлая тема</span>
+        </button>
+        <button class="button button--small button--primary topbar__cta" type="button" aria-disabled="true" data-i18n="requestDemo">Запросить демо</button>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero section-shell" aria-labelledby="hero-title">
+        <div class="hero__copy">
+          <p class="eyebrow" data-i18n="heroEyebrow">ПОДГОТОВКА ДАННЫХ ДЛЯ DPP</p>
+          <h1 id="hero-title" data-i18n="heroTitle">Данные для паспорта батареи — без хаоса в файлах и таблицах</h1>
+          <p class="hero__lead" data-i18n="heroLead">RegiBatt помогает импортёрам и производителям батарей для лёгкого электротранспорта (LMT) собрать документы, привести сведения к единой структуре, вовремя увидеть пробелы и подготовить данные для дальнейшей работы с цифровым паспортом батареи.</p>
+          <div class="hero__actions">
+            <button class="button button--primary" type="button" aria-disabled="true" data-i18n="requestDemo">Запросить демо</button>
+            <button class="button button--secondary" type="button" aria-disabled="true" data-i18n="discussTask">Обсудить задачу</button>
+          </div>
+          <ul class="hero__assurances" aria-label="Ключевые преимущества" data-i18n-aria-label="assurancesLabel">
+            <li data-i18n="assuranceOne">Фокус на LMT и рынке ЕС</li>
+            <li data-i18n="assuranceTwo">Контроль человеком</li>
+            <li data-i18n="assuranceThree">Экспорт CSV и JSON</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-label="Схема подготовки данных" data-i18n-aria-label="heroVisualLabel">
+          <div class="hero-visual__glow" aria-hidden="true"></div>
+          <div class="workspace-card">
+            <div class="workspace-card__header">
+              <div><span class="workspace-card__label" data-i18n="workspaceLabel">РАБОЧАЯ ОБЛАСТЬ</span><strong data-i18n="workspaceTitle">Линейка Urban Motion</strong></div>
+              <span class="status-pill" data-i18n="statusInProgress">В работе</span>
+            </div>
+            <div class="readiness-card">
+              <div class="readiness-card__heading"><span data-i18n="dataCompleteness">Заполненность данных</span><strong>84%</strong></div>
+              <div class="progress" aria-hidden="true"><span></span></div>
+              <p data-i18n="readinessHint">Пробелы видны до формирования экспорта</p>
+            </div>
+            <div class="workflow-preview">
+              <div class="workflow-preview__item is-complete"><span class="workflow-preview__icon" aria-hidden="true">✓</span><span><strong data-i18n="previewDocuments">Документы</strong><small data-i18n="previewDocumentsNote">Собраны в одном месте</small></span></div>
+              <div class="workflow-preview__item is-complete"><span class="workflow-preview__icon" aria-hidden="true">✓</span><span><strong data-i18n="previewStructure">Структура данных</strong><small data-i18n="previewStructureNote">Поля приведены к единому виду</small></span></div>
+              <div class="workflow-preview__item has-warning"><span class="workflow-preview__icon" aria-hidden="true">!</span><span><strong data-i18n="previewGaps">Проверка пробелов</strong><small data-i18n="previewGapsNote">3 пункта требуют внимания</small></span></div>
+            </div>
+            <div class="export-row"><span data-i18n="exportReady">Результат для дальнейшей работы</span><div><span>CSV</span><span>JSON</span></div></div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="regulation-note" aria-label="Нормативный контекст" data-i18n-aria-label="regulationLabel">
+        <div class="section-shell regulation-note__inner">
+          <span class="regulation-note__date">18.02.2027</span>
+          <p data-i18n="regulationText">С этой даты электронный паспорт требуется для LMT-батарей, промышленных батарей ёмкостью более 2 кВт·ч и батарей электромобилей, выводимых на рынок или вводимых в эксплуатацию в ЕС.</p>
+          <span class="regulation-note__source" data-i18n="regulationSource">Регламент (ЕС) 2023/1542, статья 77</span>
+        </div>
+      </aside>
+
+      <section class="problem section" aria-labelledby="problem-title">
+        <div class="section-shell">
+          <div class="section-heading section-heading--center">
+            <p class="eyebrow" data-i18n="problemEyebrow">ПРОБЛЕМА</p>
+            <h2 id="problem-title" data-i18n="problemTitle">Паспорт начинается не с QR-кода. Он начинается с надёжных данных.</h2>
+            <p data-i18n="problemLead">Когда сведения разбросаны по спецификациям, сертификатам, письмам и таблицам, команда тратит время не на решение задачи, а на поиск актуальной версии и ручную сверку.</p>
+          </div>
+          <div class="problem-grid">
+            <article class="problem-card"><span class="card-number">01</span><h3 data-i18n="problemOneTitle">Разрозненные источники</h3><p data-i18n="problemOneText">Файлы приходят от разных поставщиков, в разных форматах и без единого стандарта именования.</p></article>
+            <article class="problem-card"><span class="card-number">02</span><h3 data-i18n="problemTwoTitle">Невидимые пробелы</h3><p data-i18n="problemTwoText">Отсутствующие или противоречивые сведения обнаруживаются слишком поздно — уже перед передачей данных.</p></article>
+            <article class="problem-card"><span class="card-number">03</span><h3 data-i18n="problemThreeTitle">Ручная координация</h3><p data-i18n="problemThreeText">Compliance, Quality и Operations поддерживают параллельные таблицы и повторяют одну и ту же проверку.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="solution" class="solution section" aria-labelledby="solution-title">
+        <div class="section-shell split-layout">
+          <div class="section-heading section-heading--sticky">
+            <p class="eyebrow" data-i18n="solutionEyebrow">РЕШЕНИЕ REGIBATT</p>
+            <h2 id="solution-title" data-i18n="solutionTitle">Одна рабочая среда между исходными документами и готовой структурой</h2>
+            <p data-i18n="solutionLead">RegiBatt создаёт прозрачный процесс подготовки данных: каждый файл связан с батареей, каждое поле можно проверить, а каждый пробел остаётся видимым до исправления.</p>
+          </div>
+          <div class="feature-list">
+            <article class="feature-card"><div class="feature-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7zM14 3v5h5M9.5 12h6M9.5 16h6" /></svg></div><div><h3 data-i18n="featureDocumentsTitle">Документы под контролем</h3><p data-i18n="featureDocumentsText">Храните исходные файлы, версии и связь с конкретной батареей в одном защищённом рабочем пространстве.</p></div></article>
+            <article class="feature-card"><div class="feature-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4zM4 10h16M10 5v14" /></svg></div><div><h3 data-i18n="featureDataTitle">Единая структура данных</h3><p data-i18n="featureDataText">Переносите сведения из разрозненных источников в понятные поля без бесконечного копирования таблиц.</p></div></article>
+            <article class="feature-card"><div class="feature-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 4.5 6v5c0 4.8 3 8.3 7.5 10 4.5-1.7 7.5-5.2 7.5-10V6zM9 12l2 2 4-4" /></svg></div><div><h3 data-i18n="featureValidationTitle">Проверка до выгрузки</h3><p data-i18n="featureValidationText">Сразу видите незаполненные поля и ошибки формата, чтобы команда исправляла их до передачи результата.</p></div></article>
+            <article class="feature-card"><div class="feature-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v12M8 11l4 4 4-4M5 19h14" /></svg></div><div><h3 data-i18n="featureExportTitle">Предсказуемый результат</h3><p data-i18n="featureExportText">Формируйте версионированные CSV и JSON со стабильными полями для дальнейшей загрузки и интеграции.</p></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="workflow" class="workflow section" aria-labelledby="workflow-title">
+        <div class="section-shell">
+          <div class="section-heading"><p class="eyebrow" data-i18n="workflowEyebrow">ПОНЯТНЫЙ ПРОЦЕСС</p><h2 id="workflow-title" data-i18n="workflowTitle">От первого файла до структурированного экспорта — четыре последовательных шага</h2></div>
+          <ol class="steps">
+            <li><span class="steps__number">01</span><div><h3 data-i18n="stepOneTitle">Создайте карточку батареи</h3><p data-i18n="stepOneText">Соберите основную информацию о модели или продуктовой линейке в одном месте.</p></div></li>
+            <li><span class="steps__number">02</span><div><h3 data-i18n="stepTwoTitle">Добавьте данные и документы</h3><p data-i18n="stepTwoText">Свяжите спецификации и подтверждающие материалы с соответствующими полями.</p></div></li>
+            <li><span class="steps__number">03</span><div><h3 data-i18n="stepThreeTitle">Проверьте заполненность</h3><p data-i18n="stepThreeText">Получите единый список пробелов, исправьте ошибки и подтвердите результат человеком.</p></div></li>
+            <li><span class="steps__number">04</span><div><h3 data-i18n="stepFourTitle">Экспортируйте структуру</h3><p data-i18n="stepFourText">Подготовьте CSV или JSON для следующего этапа вашего DPP-процесса.</p></div></li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="benefits" class="benefits section" aria-labelledby="benefits-title">
+        <div class="section-shell benefits__layout">
+          <div class="section-heading"><p class="eyebrow" data-i18n="benefitsEyebrow">ВЫГОДА ДЛЯ БИЗНЕСА</p><h2 id="benefits-title" data-i18n="benefitsTitle">Меньше ручной работы. Больше контроля над готовностью данных.</h2><p data-i18n="benefitsLead">RegiBatt помогает сократить операционные потери там, где обычные папки и таблицы перестают справляться.</p></div>
+          <div class="benefit-panel"><ul class="benefit-list">
+            <li><span aria-hidden="true">✓</span><div><strong data-i18n="benefitOneTitle">Не искать актуальную версию</strong><p data-i18n="benefitOneText">Команда работает с единым набором данных и связанных документов.</p></div></li>
+            <li><span aria-hidden="true">✓</span><div><strong data-i18n="benefitTwoTitle">Не проверять всё заново</strong><p data-i18n="benefitTwoText">Статусы и история изменений сохраняют контекст выполненной работы.</p></div></li>
+            <li><span aria-hidden="true">✓</span><div><strong data-i18n="benefitThreeTitle">Раньше замечать риски</strong><p data-i18n="benefitThreeText">Незаполненные и некорректные поля видны до финальной выгрузки.</p></div></li>
+            <li><span aria-hidden="true">✓</span><div><strong data-i18n="benefitFourTitle">Повторно использовать данные</strong><p data-i18n="benefitFourText">Структурированный результат легче передавать в другие системы и процессы.</p></div></li>
+          </ul></div>
+        </div>
+      </section>
+
+      <section class="audience section" aria-labelledby="audience-title">
+        <div class="section-shell">
+          <div class="section-heading section-heading--center"><p class="eyebrow" data-i18n="audienceEyebrow">ДЛЯ КОГО</p><h2 id="audience-title" data-i18n="audienceTitle">Создано для команд, которые отвечают за вывод батарейной продукции на рынок ЕС</h2></div>
+          <div class="audience-grid">
+            <article><span class="audience-card__tag">LMT</span><h3 data-i18n="audienceOneTitle">Импортёры и производители</h3><p data-i18n="audienceOneText">Компании, работающие с батареями для электровелосипедов, электросамокатов и другого лёгкого транспорта.</p></article>
+            <article><span class="audience-card__tag">C&amp;Q</span><h3 data-i18n="audienceTwoTitle">Compliance и Quality</h3><p data-i18n="audienceTwoText">Специалисты, которым нужны прозрачность источников, полнота сведений и контролируемая проверка.</p></article>
+            <article><span class="audience-card__tag">OPS</span><h3 data-i18n="audienceThreeTitle">Operations и Supply Chain</h3><p data-i18n="audienceThreeText">Команды, координирующие данные поставщиков и отвечающие за сроки подготовки продукта.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust section" aria-labelledby="trust-title">
+        <div class="section-shell trust__inner">
+          <div class="trust__copy"><p class="eyebrow" data-i18n="trustEyebrow">КОНТРОЛЬ И ПРОЗРАЧНОСТЬ</p><h2 id="trust-title" data-i18n="trustTitle">Данные компании остаются в границах её рабочего пространства</h2><p data-i18n="trustLead">Доступ к батареям, документам и экспортам строится вокруг проверенного членства в компании и назначенной роли пользователя.</p></div>
+          <div class="trust__points">
+            <div><span aria-hidden="true">01</span><p data-i18n="trustOne">Приватное хранение документов</p></div>
+            <div><span aria-hidden="true">02</span><p data-i18n="trustTwo">Роли owner, admin, editor и viewer</p></div>
+            <div><span aria-hidden="true">03</span><p data-i18n="trustThree">История значимых изменений</p></div>
+            <div><span aria-hidden="true">04</span><p data-i18n="trustFour">Проверка доступа перед скачиванием и экспортом</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="faq section" aria-labelledby="faq-title">
+        <div class="section-shell faq__layout">
+          <div class="section-heading"><p class="eyebrow" data-i18n="faqEyebrow">ВАЖНО ЗНАТЬ</p><h2 id="faq-title" data-i18n="faqTitle">Честно о возможностях RegiBatt</h2></div>
+          <div class="faq-list">
+            <details open><summary data-i18n="faqOneQuestion">RegiBatt выпускает цифровой паспорт батареи?</summary><p data-i18n="faqOneAnswer">RegiBatt готовит и проверяет структуру данных, помогает управлять подтверждающими документами и формирует CSV/JSON. Сервис не является государственным реестром или органом сертификации.</p></details>
+            <details><summary data-i18n="faqTwoQuestion">Сервис гарантирует юридическое соответствие?</summary><p data-i18n="faqTwoAnswer">Нет. RegiBatt помогает увидеть пробелы и технические ошибки, но итоговую проверку и ответственность за точность, полноту и актуальность сведений сохраняет уполномоченный специалист компании.</p></details>
+            <details><summary data-i18n="faqThreeQuestion">Какие компании находятся в фокусе?</summary><p data-i18n="faqThreeAnswer">Первый фокус — импортёры и производители LMT в ЕС: электровелосипеды, электросамокаты и другие категории лёгкого электротранспорта.</p></details>
+            <details><summary data-i18n="faqFourQuestion">Можно ли подключить RegiBatt к другим системам?</summary><p data-i18n="faqFourAnswer">CSV и JSON предусмотрены для переноса данных. Внешний API будет выпускаться постепенно, вместе с готовностью соответствующих функций и документированного контракта.</p></details>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-cta section" aria-labelledby="final-cta-title">
+        <div class="section-shell final-cta__card">
+          <div><p class="eyebrow" data-i18n="ctaEyebrow">НАЧНИТЕ С ОДНОЙ ЛИНЕЙКИ</p><h2 id="final-cta-title" data-i18n="ctaTitle">Узнайте, где вашим данным уже сейчас нужна доработка</h2><p data-i18n="ctaText">Разберите один реальный набор документов, соберите карту полей и получите понятный список пробелов — до того, как они станут срочной проблемой.</p></div>
+          <div class="final-cta__action"><button class="button button--primary" type="button" aria-disabled="true" data-i18n="requestDemo">Запросить демо</button><small data-i18n="ctaNote">Начните с одной продуктовой линейки</small></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="section-shell footer__inner">
+        <div class="footer__brand"><a class="logo" href="#main-content" aria-label="RegiBatt — главная" data-i18n-aria-label="homeLabel"><img src="regibatt_logo.svg" alt="" width="31" height="31" /><span class="logo__name"><span class="logo__regi">Regi</span><span class="logo__batt">Batt</span></span></a><p data-i18n="footerDescription">Структурированные данные для уверенной подготовки к цифровому паспорту батареи.</p></div>
+        <div class="footer__meta"><span>© 2026 RegiBatt</span><span data-i18n="footerScope">Подготовка данных · Контроль человеком</span></div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
