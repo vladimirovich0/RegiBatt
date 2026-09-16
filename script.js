@@ -34,6 +34,7 @@ const english = {
   navBenefits: "Business value",
   navFaq: "FAQ",
   requestDemo: "Request a demo",
+  openWorkspace: "Open workspace",
   discussTask: "Discuss your workflow",
   heroEyebrow: "BATTERY PASSPORT DATA PREPARATION",
   heroTitle: "Battery passport data — without the chaos of files and spreadsheets",

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ru" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0F172A" />
+    <meta name="description" content="Рабочее пространство Rovnota для подготовки данных паспорта батареи." />
+    <title>Обзор проекта — Rovnota</title>
+    <link rel="icon" href="rovnota_logo.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@700&family=Montserrat:wght@800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="workspace.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#workspace-content">Перейти к содержанию</a>
+    <div class="app-shell">
+      <aside class="app-sidebar">
+        <a class="app-brand" href="index.html" aria-label="Rovnota — главная"><img src="rovnota_logo.svg" alt="" /><span>Rovnota</span></a>
+        <div class="workspace-switcher"><span class="workspace-avatar">VR</span><span><small>Рабочее пространство</small><strong>VoltRide Sp. z o.o.</strong></span><svg viewBox="0 0 24 24" width="16" aria-hidden="true"><path d="m8 10 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2" /></svg></div>
+        <nav class="app-nav" aria-label="Разделы рабочего пространства">
+          <a href="workspace.html" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg><span>Обзор</span></a>
+          <a href="documents.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h8l4 4v14H7zM15 3v5h5M4 7v13h10"/></svg><span>Документы</span></a>
+          <a href="readiness.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18a8 8 0 1 1 16 0M12 10v5l3 1"/></svg><span>Карта готовности</span></a>
+          <a href="review.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4.5 6v5c0 4.8 3 8.3 7.5 10 4.5-1.7 7.5-5.2 7.5-10V6zM12 8v5M12 16h.01"/></svg><span>Требует проверки</span><span class="nav-count">5</span></a>
+          <a href="dataset.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H5v6l-2 3 2 3v6h3M16 3h3v6l2 3-2 3v6h-3"/></svg><span>Результат</span></a>
+        </nav>
+        <div class="stage-card"><span class="stage-card__icon">✦</span><span><strong>Этап 1</strong><small>Data Readiness</small></span><span class="stage-card__dot" aria-label="Активный этап"></span></div>
+      </aside>
+
+      <div class="app-column">
+        <header class="app-topbar">
+          <div class="project-label"><small>Проект</small><strong>PowerCell PC-4815</strong></div>
+          <div class="app-topbar__actions"><span class="demo-badge">Демонстрационная среда</span><a class="back-site" href="index.html"><span>На главный сайт</span>↗</a><button class="icon-button" type="button" data-theme-toggle aria-label="Включить светлую тему" aria-pressed="true"><span data-theme-icon>☀</span></button></div>
+        </header>
+
+        <main class="app-content" id="workspace-content">
+          <header class="page-heading">
+            <div><p class="page-heading__eyebrow">ЭТАП 1 · DATA READINESS</p><h1>PowerCell PC-4815</h1><p class="page-heading__description">VoltRide Sp. z o.o. · Польша и Германия · обновлено сегодня, 14:32</p></div>
+            <div class="page-heading__actions"><a class="button button--secondary" href="documents.html">＋ Добавить документы</a><a class="button button--primary" href="review.html">Продолжить проверку →</a></div>
+          </header>
+
+          <section class="readiness-hero" aria-labelledby="readiness-title">
+            <div class="readiness-score" aria-label="Готовность данных 78 процентов"><span>78%</span><small>готовность<br />данных</small></div>
+            <div class="readiness-copy"><p class="card-kicker">КАРТА ГОТОВНОСТИ</p><h2 id="readiness-title">Большая часть данных уже найдена</h2><p>AI извлёк 18 из 23 полей. Чтобы подготовить согласованный набор данных, разберите один конфликт и четыре пропуска.</p><div class="readiness-legend"><span><i class="dot-green"></i>18 найдено</span><span><i class="dot-amber"></i>4 отсутствует</span><span><i class="dot-red"></i>1 конфликт</span></div></div>
+            <a class="button" href="readiness.html">Открыть карту →</a>
+          </section>
+
+          <section class="metric-grid" aria-label="Сводные показатели">
+            <article class="metric-card"><span class="metric-card__icon">▱</span><div><strong>5</strong><p>документов обработано</p></div></article>
+            <article class="metric-card"><span class="metric-card__icon">✓</span><div><strong>18</strong><p>значений найдено AI</p></div></article>
+            <article class="metric-card"><span class="metric-card__icon">!</span><div><strong>5</strong><p>вопросов требуют решения</p></div></article>
+            <article class="metric-card"><span class="metric-card__icon">◷</span><div><strong>14:32</strong><p>последний анализ</p></div></article>
+          </section>
+
+          <div class="content-grid">
+            <section class="card">
+              <div class="card__header"><div><p class="card-kicker">СЛЕДУЮЩИЕ ДЕЙСТВИЯ</p><h2>Требует внимания</h2></div><a class="text-link" href="review.html">Все вопросы →</a></div>
+              <div class="issue-list">
+                <a class="issue-row" href="review.html"><span class="issue-icon issue-icon--red">!</span><span><strong>Конфликт массы батареи</strong><small>В документах найдены значения 3,6 kg и 3,55 kg.</small></span><span class="issue-priority">Высокий</span><span class="row-arrow">→</span></a>
+                <a class="issue-row" href="review.html#cathode"><span class="issue-icon issue-icon--amber">!</span><span><strong>Не указан состав катода</strong><small>Обязательное значение не найдено ни в одном документе.</small></span><span class="issue-priority">Высокий</span><span class="row-arrow">→</span></a>
+                <a class="issue-row" href="review.html#lithium"><span class="issue-icon issue-icon--amber">!</span><span><strong>Нет доли переработанного лития</strong><small>Нужно значение в процентах и подтверждающий источник.</small></span><span class="issue-priority">Высокий</span><span class="row-arrow">→</span></a>
+                <a class="issue-row" href="review.html#dismantling"><span class="issue-icon issue-icon--amber">!</span><span><strong>Нет инструкции по демонтажу</strong><small>Добавьте документ или ссылку на актуальную инструкцию.</small></span><span class="issue-priority">Средний</span><span class="row-arrow">→</span></a>
+              </div>
+            </section>
+
+            <section class="card">
+              <div class="card__header"><div><p class="card-kicker">ПОСЛЕДНИЕ ИСТОЧНИКИ</p><h2>Документы</h2></div><a class="text-link" href="documents.html">Все документы →</a></div>
+              <div class="document-list">
+                <div class="document-row"><span class="file-icon">PDF</span><span><strong>battery_datasheet.pdf</strong><small>7 значений · Обработан</small></span><span class="document-ready">✓</span></div>
+                <div class="document-row"><span class="file-icon">PDF</span><span><strong>un38_3_test_report.pdf</strong><small>4 значения · Обработан</small></span><span class="document-ready">✓</span></div>
+                <div class="document-row"><span class="file-icon">XLS</span><span><strong>battery_specifications.xlsx</strong><small>5 значений · Обработан</small></span><span class="document-ready">✓</span></div>
+                <div class="document-row"><span class="file-icon">CSV</span><span><strong>supplier_information.csv</strong><small>3 значения · Обработан</small></span><span class="document-ready">✓</span></div>
+              </div>
+            </section>
+          </div>
+
+          <section class="process-card">
+            <div class="process-card__intro"><p class="card-kicker">РАБОЧИЙ ПРОЦЕСС</p><h2>От документов до проверенного результата</h2><p>В кабинете остаются только шаги, необходимые для первого этапа.</p></div>
+            <ol class="process-steps"><li class="is-done"><span>01</span><strong>Документы</strong><small>5 файлов загружено</small></li><li class="is-done"><span>02</span><strong>AI-анализ</strong><small>18 значений найдено</small></li><li class="is-current"><span>03</span><strong>Проверка</strong><small>5 вопросов открыто</small></li><li><span>04</span><strong>Результат</strong><small>После подтверждения</small></li></ol>
+          </section>
+          <div class="notice"><span aria-hidden="true">ⓘ</span><p><strong>Готовность данных — не юридическая сертификация.</strong> Rovnota показывает полноту и происхождение сведений, а финальные значения подтверждает человек.</p></div>
+        </main>
+      </div>
+    </div>
+    <script src="workspace.js"></script>
+  </body>
+</html>

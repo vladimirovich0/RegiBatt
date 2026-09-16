@@ -92,6 +92,7 @@ svg { display: block; }
 .theme-toggle__icon { color: var(--green-500); font-size: 1rem; line-height: 1; }
 
 .button { min-height: 52px; display: inline-flex; align-items: center; justify-content: center; padding: .9rem 1.45rem; border: 2px solid var(--green-500); border-radius: .75rem; font-size: .86rem; font-weight: 800; line-height: 1.15; cursor: default; transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease; }
+.button[href] { text-decoration: none; cursor: pointer; }
 .button--small { min-height: 42px; padding: .7rem 1rem; font-size: .76rem; }
 .button--primary { color: var(--green-950); background: var(--green-500); box-shadow: 0 10px 30px rgba(34,197,94,.2); }
 .button--secondary { color: var(--navy-50); background: var(--navy-900); }

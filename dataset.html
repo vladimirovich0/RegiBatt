@@ -1,0 +1,36 @@
+<!doctype html><html lang="ru" data-theme="dark"><head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="theme-color" content="#0F172A" /><title>Структурированный результат — Rovnota</title><link rel="icon" href="rovnota_logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@700&family=Montserrat:wght@800&display=swap" rel="stylesheet" /><link rel="stylesheet" href="workspace.css" />
+</head><body><a class="skip-link" href="#workspace-content">Перейти к содержанию</a><div class="app-shell">
+  <aside class="app-sidebar"><a class="app-brand" href="index.html"><img src="rovnota_logo.svg" alt="" /><span>Rovnota</span></a><div class="workspace-switcher"><span class="workspace-avatar">VR</span><span><small>Рабочее пространство</small><strong>VoltRide Sp. z o.o.</strong></span><span>⌄</span></div>
+    <nav class="app-nav" aria-label="Разделы рабочего пространства"><a href="workspace.html"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg><span>Обзор</span></a><a href="documents.html"><svg viewBox="0 0 24 24"><path d="M7 3h8l4 4v14H7zM15 3v5h5M4 7v13h10"/></svg><span>Документы</span></a><a href="readiness.html"><svg viewBox="0 0 24 24"><path d="M4 18a8 8 0 1 1 16 0M12 10v5l3 1"/></svg><span>Карта готовности</span></a><a href="review.html"><svg viewBox="0 0 24 24"><path d="M12 3 4.5 6v5c0 4.8 3 8.3 7.5 10 4.5-1.7 7.5-5.2 7.5-10V6zM12 8v5M12 16h.01"/></svg><span>Требует проверки</span><span class="nav-count">5</span></a><a href="dataset.html" aria-current="page"><svg viewBox="0 0 24 24"><path d="M8 3H5v6l-2 3 2 3v6h3M16 3h3v6l2 3-2 3v6h-3"/></svg><span>Результат</span></a></nav><div class="stage-card"><span class="stage-card__icon">✦</span><span><strong>Этап 1</strong><small>Data Readiness</small></span><span class="stage-card__dot"></span></div>
+  </aside>
+  <div class="app-column"><header class="app-topbar"><div class="project-label"><small>Проект</small><strong>PowerCell PC-4815</strong></div><div class="app-topbar__actions"><span class="demo-badge">Демонстрационная среда</span><a class="back-site" href="index.html"><span>На главный сайт</span>↗</a><button class="icon-button" type="button" data-theme-toggle aria-label="Включить светлую тему" aria-pressed="true"><span data-theme-icon>☀</span></button></div></header>
+    <main class="app-content" id="workspace-content"><header class="page-heading"><div><p class="page-heading__eyebrow">СТРУКТУРИРОВАННЫЙ РЕЗУЛЬТАТ</p><h1>Набор данных</h1><p class="page-heading__description">Предварительный результат AI-анализа. Финальная версия станет доступна после ручной проверки открытых вопросов.</p></div><div class="page-heading__actions"><a class="button button--secondary" href="review.html">← Вернуться к проверке</a></div></header>
+      <div class="dataset-grid"><section class="dataset-summary"><span class="dataset-icon">{ }</span><p class="card-kicker">ЧЕРНОВИК · ВЕРСИЯ 0.1</p><h2>battery-data-pc-4815</h2><p>Структура сформирована из 23 полей с сохранением источников и статусов.</p><dl class="dataset-facts"><div><dt>Найдено</dt><dd>18 полей</dd></div><div><dt>Не заполнено</dt><dd>4 поля</dd></div><div><dt>Конфликты</dt><dd>1 поле</dd></div><div><dt>Форматы</dt><dd>JSON · CSV</dd></div></dl><div class="locked-export"><span>⌕</span><span><strong>Экспорт пока заблокирован</strong><small>Сначала разберите 5 открытых вопросов.</small></span></div><a class="button button--primary" href="review.html">Перейти к проверке</a></section>
+        <section class="code-card"><div class="code-card__header"><span class="window-dots"><i></i><i></i><i></i></span><strong>preview.json</strong><span class="draft-badge">Черновик</span></div><pre>{
+  "schemaVersion": "0.1-draft",
+  "project": "PC-4815",
+  "battery": {
+    "model": "PC-4815",
+    "category": "LMT",
+    "manufacturer": "Shenzhen PowerCell Technology Co., Ltd.",
+    "nominalVoltage": {
+      "value": 48,
+      "unit": "V"
+    },
+    "ratedCapacity": {
+      "value": 15,
+      "unit": "Ah"
+    }
+  },
+  "readiness": {
+    "found": 18,
+    "missing": 4,
+    "conflicts": 1
+  }
+}</pre><div class="code-card__footer"><span>✓ Схема корректна</span><button type="button" disabled>Скачать JSON</button></div></section></div>
+      <div class="info-banner info-banner--spaced"><strong>Результат сохраняет неопределённость</strong><span>Отсутствующие и конфликтующие значения остаются явно отмеченными и не подменяются автоматически.</span></div>
+    </main>
+  </div>
+</div><script src="workspace.js"></script></body></html>
