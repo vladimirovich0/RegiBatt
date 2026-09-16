@@ -10,16 +10,16 @@ const translatedLabels = document.querySelectorAll("[data-i18n-aria-label]");
 
 const pageCopy = {
   ru: {
-    title: "RegiBatt — подготовка данных для паспорта батареи",
-    description: "RegiBatt помогает импортёрам и производителям батарей собрать документы, привести сведения к единой структуре, найти пробелы и подготовить понятный комплект данных для оформления паспорта батареи.",
+    title: "Rovnota Systems — подготовка данных для паспорта батареи",
+    description: "Rovnota Systems помогает импортёрам и производителям батарей собрать документы, привести сведения к единой структуре, найти пробелы и подготовить понятный комплект данных для оформления паспорта батареи.",
     lightTheme: "Светлая тема",
     darkTheme: "Тёмная тема",
     enableLightTheme: "Включить светлую тему",
     enableDarkTheme: "Включить тёмную тему"
   },
   en: {
-    title: "RegiBatt — battery passport data preparation",
-    description: "RegiBatt helps battery importers and manufacturers collect documents, structure information, identify gaps, and prepare a clear data package for battery passport preparation.",
+    title: "Rovnota Systems — battery passport data preparation",
+    description: "Rovnota Systems helps battery importers and manufacturers collect documents, structure information, identify gaps, and prepare a clear data package for battery passport preparation.",
     lightTheme: "Light theme",
     darkTheme: "Dark theme",
     enableLightTheme: "Enable light theme",
@@ -37,7 +37,7 @@ const english = {
   discussTask: "Discuss your workflow",
   heroEyebrow: "BATTERY PASSPORT DATA PREPARATION",
   heroTitle: "Battery passport data — without the chaos of files and spreadsheets",
-  heroLead: "RegiBatt helps battery importers and manufacturers collect documents, organise information into one structure, identify gaps early, and prepare a clear data package for battery passport preparation.",
+  heroLead: "Rovnota Systems helps battery importers and manufacturers collect documents, organise information into one structure, identify gaps early, and prepare a clear data package for battery passport preparation.",
   assuranceOne: "Focused on batteries and the EU market",
   assuranceTwo: "Human-controlled workflow",
   assuranceThree: "CSV and JSON exports",
@@ -64,9 +64,9 @@ const english = {
   problemTwoText: "Missing or conflicting information is discovered too late — just before data needs to be handed over.",
   problemThreeTitle: "Manual coordination",
   problemThreeText: "Compliance, quality, and operations teams maintain parallel spreadsheets and repeat the same checks.",
-  solutionEyebrow: "THE REGIBATT SOLUTION",
+  solutionEyebrow: "THE ROVNOTA SYSTEMS SOLUTION",
   solutionTitle: "One workspace between source documents and a usable data structure",
-  solutionLead: "RegiBatt creates a transparent preparation workflow: each file is linked to a battery, each field can be reviewed, and every gap stays visible until it is resolved.",
+  solutionLead: "Rovnota Systems creates a transparent preparation workflow: each file is linked to a battery, each field can be reviewed, and every gap stays visible until it is resolved.",
   featureDocumentsTitle: "Documents under control",
   featureDocumentsText: "Keep source files, versions, and their connection to a specific battery in one protected company workspace.",
   featureDataTitle: "One data structure",
@@ -120,7 +120,7 @@ const english = {
   faqOneAnswer: "Specifications, certificates, spreadsheets, supplier documents, and internal materials containing battery data.",
   faqTwoQuestion: "What does the team receive at the end?",
   faqTwoAnswer: "A data map, field statuses, a list of gaps and contradictions, supplier questions, and structured CSV or JSON.",
-  faqThreeQuestion: "Who is RegiBatt for?",
+  faqThreeQuestion: "Who is Rovnota Systems for?",
   faqThreeAnswer: "Manufacturers, importers, and teams collecting battery information and preparing it for products entering the EU market.",
   faqFourQuestion: "How does a subscription help with new batteries?",
   faqFourAnswer: "Reuse the prepared structure, compare versions, and prepare data faster for each next model.",
@@ -133,7 +133,7 @@ const english = {
 };
 
 const englishLabels = {
-  homeLabel: "RegiBatt — home",
+  homeLabel: "Rovnota — home",
   mainNavigationLabel: "Main navigation",
   languageLabel: "Language selection",
   assurancesLabel: "Key benefits",
@@ -157,8 +157,8 @@ function saveSetting(key, value) {
   try { localStorage.setItem(key, value); } catch { /* Storage is optional. */ }
 }
 
-const savedTheme = readSetting("regibatt.theme") || readSetting("theme");
-const savedLanguage = readSetting("regibatt.language");
+const savedTheme = readSetting("rovnota.theme") || readSetting("regibatt.theme") || readSetting("theme");
+const savedLanguage = readSetting("rovnota.language") || readSetting("regibatt.language");
 
 if (savedTheme === "light" || savedTheme === "dark") root.dataset.theme = savedTheme;
 let currentLanguage = savedLanguage === "en" ? "en" : "ru";
@@ -203,14 +203,14 @@ function setLanguage(language) {
 
 themeToggle?.addEventListener("click", () => {
   root.dataset.theme = root.dataset.theme === "dark" ? "light" : "dark";
-  saveSetting("regibatt.theme", root.dataset.theme);
+  saveSetting("rovnota.theme", root.dataset.theme);
   updateThemeToggle();
 });
 
 languageButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const language = button.dataset.language;
-    saveSetting("regibatt.language", language);
+    saveSetting("rovnota.language", language);
     setLanguage(language);
   });
 });

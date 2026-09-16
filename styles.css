@@ -76,8 +76,7 @@ svg { display: block; }
 .logo { display: inline-flex; align-items: center; gap: .7rem; flex: 0 0 auto; color: var(--navy-50); text-decoration: none; }
 .logo img { width: 31px; height: 31px; object-fit: contain; filter: drop-shadow(0 0 5px rgba(34,197,94,.26)); }
 .logo__name { font-family: "Montserrat", sans-serif; font-size: 1.1rem; font-weight: 800; letter-spacing: -.025em; }
-.logo__regi { color: var(--navy-50); }
-.logo__batt { color: var(--green-500); }
+.logo__word { color: var(--navy-50); }
 .main-nav { display: flex; justify-content: center; gap: clamp(1.1rem, 2.4vw, 2rem); }
 .main-nav a { position: relative; padding-block: .4rem; color: var(--navy-300); font-size: .78rem; font-weight: 600; text-decoration: none; transition: color 160ms ease; }
 .main-nav a::after { position: absolute; right: 0; bottom: 0; left: 0; height: 1px; content: ""; background: var(--green-500); transform: scaleX(0); transition: transform 160ms ease; }
