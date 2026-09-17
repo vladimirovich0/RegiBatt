@@ -7,7 +7,43 @@
   </aside>
   <div class="app-column"><header class="app-topbar"><div class="project-label"><small>Проект</small><strong>PowerCell PC-4815</strong></div><div class="app-topbar__actions"><span class="demo-badge">Демонстрационная среда</span><a class="back-site" href="index.html"><span>На главный сайт</span>↗</a><button class="icon-button" type="button" data-theme-toggle aria-label="Включить светлую тему" aria-pressed="true"><span data-theme-icon>☀</span></button></div></header>
     <main class="app-content" id="workspace-content"><header class="page-heading"><div><p class="page-heading__eyebrow">РЕЗУЛЬТАТ AI-АНАЛИЗА</p><h1>Карта готовности данных</h1><p class="page-heading__description">Все поля первого набора данных, их текущий статус и источник. Пропуски не заменяются предположениями AI.</p></div><div class="page-heading__actions"><a class="button button--primary" href="review.html">Разобрать 5 вопросов →</a></div></header>
-      <section class="readiness-strip"><div class="readiness-strip__title"><strong>78%</strong><span>готовность данных</span></div><div class="readiness-bar"><span></span></div><dl><div><dt>Найдено</dt><dd>18</dd></div><div><dt>Отсутствует</dt><dd>4</dd></div><div><dt>Конфликты</dt><dd>1</dd></div></dl></section>
+      <section class="data-readiness-card" aria-labelledby="data-readiness-title" aria-describedby="data-readiness-note">
+        <header class="data-readiness-card__header">
+          <div>
+            <h2 id="data-readiness-title">Готовность данных</h2>
+            <p>18 из 23 обязательных полей</p>
+          </div>
+        </header>
+        <div class="data-readiness-card__score">
+          <strong>78%</strong>
+          <span>готово</span>
+        </div>
+        <div class="readiness-distribution" role="img" aria-label="18 полей найдено, 4 отсутствуют, 1 содержит конфликт">
+          <span class="readiness-distribution__segment readiness-distribution__segment--found"></span>
+          <span class="readiness-distribution__segment readiness-distribution__segment--review"></span>
+          <span class="readiness-distribution__segment readiness-distribution__segment--conflict"></span>
+          <span class="readiness-distribution__segment readiness-distribution__segment--missing"></span>
+        </div>
+        <p class="data-readiness-card__note" id="data-readiness-note">Будущие и неприменимые поля не учитываются в текущей готовности.</p>
+        <dl class="readiness-status-grid">
+          <div class="readiness-status readiness-status--found">
+            <dt><span class="readiness-status__icon" aria-hidden="true">✓</span><strong>18</strong></dt>
+            <dd>Найдены AI</dd>
+          </div>
+          <div class="readiness-status readiness-status--review">
+            <dt><span class="readiness-status__icon" aria-hidden="true">◷</span><strong>0</strong></dt>
+            <dd>Ожидают проверки</dd>
+          </div>
+          <div class="readiness-status readiness-status--missing">
+            <dt><span class="readiness-status__icon" aria-hidden="true">◌</span><strong>4</strong></dt>
+            <dd>Отсутствуют</dd>
+          </div>
+          <div class="readiness-status readiness-status--conflict">
+            <dt><span class="readiness-status__icon" aria-hidden="true">△</span><strong>1</strong></dt>
+            <dd>Конфликты</dd>
+          </div>
+        </dl>
+      </section>
       <section class="data-section"><div class="data-section__header"><div><h2>Идентификация и производитель</h2><p>7 из 7 полей найдено</p></div><span class="section-percent">100%</span></div><div class="data-table-wrap"><table class="data-table"><thead><tr><th>Поле</th><th>Значение</th><th>Источник</th><th>Уверенность</th><th>Статус</th></tr></thead><tbody>
         <tr><td><strong>Модель батареи</strong><small>Обязательное поле</small></td><td>PC-4815</td><td class="source-link">battery_datasheet.pdf</td><td>99%</td><td><span class="status status--green">Найдено AI</span></td></tr>
         <tr><td><strong>Категория батареи</strong><small>Обязательное поле</small></td><td>LMT</td><td class="source-link">battery_datasheet.pdf</td><td>94%</td><td><span class="status status--green">Найдено AI</span></td></tr>
