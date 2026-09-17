@@ -219,7 +219,7 @@ languageButtons.forEach((button) => {
 window.addEventListener("load", () => {
   if (!window.location.hash) return;
 
-  const target = document.querySelector(window.location.hash);
+  const target = document.getElementById(window.location.hash.slice(1));
   if (!target) return;
 
   const headerOffset = document.querySelector(".topbar")?.offsetHeight || 0;

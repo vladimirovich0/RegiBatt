@@ -68,7 +68,7 @@ Rovnota Systems берёт на себя всю черновую работу п
 
 ## 3. Логотип
 
-Основной знак: [`rovnota_logo.svg`](./rovnota_logo.svg)
+Основной знак: [`rovnota-logo.svg`](./assets/images/rovnota-logo.svg)
 
 Знак представляет собой геометрический ромб из четырёх зелёных граней.
 

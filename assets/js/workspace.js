@@ -1,6 +1,7 @@
 const root = document.documentElement;
 const themeToggle = document.querySelector("[data-theme-toggle]");
 const themeIcon = themeToggle?.querySelector("[data-theme-icon]");
+const themeColor = document.querySelector('meta[name="theme-color"]');
 const fileInput = document.querySelector("[data-file-input]");
 const fileList = document.querySelector("[data-file-list]");
 const fileCount = document.querySelector("[data-file-count]");
@@ -15,7 +16,7 @@ function saveSetting(key, value) {
   try { localStorage.setItem(key, value); } catch { /* Storage is optional. */ }
 }
 
-const savedTheme = readSetting("rovnota.theme");
+const savedTheme = readSetting("rovnota.theme") || readSetting("regibatt.theme") || readSetting("theme");
 if (savedTheme === "light" || savedTheme === "dark") root.dataset.theme = savedTheme;
 
 function updateThemeButton() {
@@ -24,6 +25,7 @@ function updateThemeButton() {
   themeIcon.textContent = isDark ? "☀" : "☾";
   themeToggle.setAttribute("aria-label", isDark ? "Включить светлую тему" : "Включить тёмную тему");
   themeToggle.setAttribute("aria-pressed", String(isDark));
+  themeColor?.setAttribute("content", isDark ? "#0F172A" : "#F8FAFC");
 }
 
 themeToggle?.addEventListener("click", () => {
@@ -49,12 +51,25 @@ fileInput?.addEventListener("change", () => {
   fileInput.value = "";
 });
 
-reviewButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const target = button.dataset.reviewTarget;
-    reviewButtons.forEach((item) => item.classList.toggle("is-active", item === button));
-    reviewPanels.forEach((panel) => panel.classList.toggle("is-active", panel.dataset.reviewPanel === target));
+function activateReviewPanel(button) {
+  const target = button?.dataset.reviewTarget;
+  if (!target) return;
+
+  reviewButtons.forEach((item) => {
+    const isActive = item === button;
+    item.classList.toggle("is-active", isActive);
+    item.setAttribute("aria-pressed", String(isActive));
   });
+  reviewPanels.forEach((panel) => panel.classList.toggle("is-active", panel.dataset.reviewPanel === target));
+}
+
+reviewButtons.forEach((button) => {
+  button.addEventListener("click", () => activateReviewPanel(button));
 });
+
+const hashTarget = window.location.hash.slice(1);
+const initialReviewButton = Array.from(reviewButtons).find((button) => button.dataset.reviewTarget === hashTarget)
+  || Array.from(reviewButtons).find((button) => button.classList.contains("is-active"));
+activateReviewPanel(initialReviewButton);
 
 updateThemeButton();
